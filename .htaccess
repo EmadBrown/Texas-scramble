@@ -1,5 +1,10 @@
 <IfModule mod_rewrite.c>
-  RewriteEngine on
-  RewriteRule ^$ public/ [L]
-  RewriteRule (.*) public/$1 [L]
+    RewriteEngine on
+    RewriteRule ^$ public/ [L]
+    RewriteRule (.*) public/$1 [L]
+#    ErrorDocument 404 /404.php
+#    ErrorDocument 500 /404.php
+#    ErrorDocument 403 /404.php
+#    ErrorDocument 400 /404.php
+#    ErrorDocument 401 /401.php
 </IfModule>

@@ -1,8 +1,11 @@
 <IfModule mod_rewrite.c>
-  Options -Multiviews
-  RewriteEngine On
-  RewriteBase /green-food/public
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteRule  ^(.+)$ index.php?url=$1 [QSA,L]
+    Options -Multiviews
+    RewriteEngine on
+    RewriteRule ^$ public/ [L]
+    RewriteRule (.*) public/$1 [L]
+#    ErrorDocument 404 /404.php
+#    ErrorDocument 500 /404.php
+#    ErrorDocument 403 /404.php
+#    ErrorDocument 400 /404.php
+#    ErrorDocument 401 /401.php
 </IfModule>
