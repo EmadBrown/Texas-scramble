@@ -27,6 +27,12 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="<?php echo URLROOT ?>">Home</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="<?php echo URLROOT ?>golfer">Golfers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="<?php echo URLROOT ?>dashboard">Dashboard</a>
+                </li>
             </ul>
             <!-- Left links -->
         </div>

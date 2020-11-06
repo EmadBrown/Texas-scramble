@@ -5,7 +5,7 @@
    * URL FORMAT - /controller/method/params
    */
   class Core {
-    protected $currentController = 'pages';
+    protected $currentController = 'Page';
     protected $currentMethod = 'index';
     protected $params = [];
 
@@ -13,6 +13,8 @@
       //print_r($this->getUrl());
 
       $url = $this->getUrl();
+
+//      var_dump($url);
 
       // Look in controllers for first value
       if(file_exists('../app/controllers/' . ucwords($url[0]). '.php')){
