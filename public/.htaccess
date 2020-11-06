@@ -1,11 +1,20 @@
 <IfModule mod_rewrite.c>
     Options -Multiviews
-    RewriteEngine on
-    RewriteRule ^$ public/ [L]
-    RewriteRule (.*) public/$1 [L]
-#    ErrorDocument 404 /404.php
-#    ErrorDocument 500 /404.php
-#    ErrorDocument 403 /404.php
-#    ErrorDocument 400 /404.php
-#    ErrorDocument 401 /401.php
+        RewriteEngine On
+        RewriteBase /
+        RewriteRule ^index\.php$ - [L]
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+
+        RewriteRule ^(.*) - [E=HTTP_AUTHORIZATION:%1]
+        ErrorDocument 404 /404.php
+        ErrorDocument 500 /404.php
+        ErrorDocument 403 /404.php
+        ErrorDocument 400 /404.php
+        ErrorDocument 401 /404.php
+#       RewriteRule . /index.php [L]
+#       RewriteRule ^$ public/ [L]
+#       RewriteRule (.*) public/$1 [L]
+
 </IfModule>
+

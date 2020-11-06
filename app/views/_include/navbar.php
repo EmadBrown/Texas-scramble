@@ -3,7 +3,7 @@
     <!-- Container wrapper -->
     <div class="container-fluid">
         <!-- Navbar brand -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="<?php echo URLROOT ?>">
             <img src="<?php echo URLROOT; ?>img/logo-trans.png" alt="logo-1" width="75" height="75">
             </a>
 
@@ -25,7 +25,7 @@
             <!-- Left links -->
             <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="<?php echo URLROOT ?>">Home</a>
                 </li>
             </ul>
             <!-- Left links -->

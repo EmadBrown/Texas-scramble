@@ -1,4 +1,15 @@
-<a href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s" target="_blank">
+<?php
+
+// session_start();
+
+require_once ('../app/bootstrap.php');
+
+include('../app/views/_include/head.php');
+
+include('../app/views/_include/navbar.php');
+?>
+
+<a href="#">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-12 mt-5 mb-5">
@@ -318,3 +329,13 @@
         </div>
     </div>
 </a>
+<?php
+
+// Init Core Library
+$init = new Core;
+
+include('../app/views/_include/footer.php');
+
+include('../app/views/_include/script.php');
+
+?>
