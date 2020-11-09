@@ -1,7 +1,7 @@
 <?php
 
 
-class Main extends Controller
+class MainController extends Controller
 {
     public function __construct()
     {

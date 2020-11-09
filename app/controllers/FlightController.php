@@ -1,7 +1,7 @@
 <?php
 
 
-class Dashboard extends  Controller
+class FlightController extends  Controller
 {
     public function index()
     {

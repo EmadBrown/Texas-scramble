@@ -1,0 +1,11 @@
+INSERT INTO golfers(`name`, `handicap`, `gender`) VALUES('Arno', 22.8,'M' );
+INSERT INTO golfers(`name`, `handicap`, `gender`) VALUES('George', 25.5,'M');
+INSERT INTO golfers(`name`, `handicap`, `gender`) VALUES('Michiel', 24.6,'M');
+INSERT INTO golfers(`name`, `handicap`, `gender`) VALUES('Peter', 23.8,'M');
+INSERT INTO golfers(`name`, `handicap`, `gender`) VALUES('Sylvia', 29.2,'F');
+INSERT INTO golfers(`name`, `handicap`, `gender`) VALUES('Jan', 26.5,'M');
+INSERT INTO golfers(`name`, `handicap`, `gender`) VALUES('Bram', 23.2,'M');
+INSERT INTO golfers(`name`, `handicap`, `gender`) VALUES('Ruud', 44.0,'M');
+INSERT INTO golfers(`name`, `handicap`, `gender`) VALUES('Leon', 18.4,'M');
+INSERT INTO golfers(`name`, `handicap`, `gender`) VALUES('Bart', 24.9,'M');
+INSERT INTO golfers(`name`, `handicap`, `gender`) VALUES('Ornella', 39.0,'F');

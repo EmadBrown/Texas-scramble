@@ -1,7 +1,7 @@
 <?php
 
 
-class Page extends Controller
+class PageController extends Controller
 {
 
     // Get Home route

@@ -1,7 +1,7 @@
 <?php
 
 
-class Golfer extends Controller
+class GolferController extends Controller
 {
 
     public function index()
