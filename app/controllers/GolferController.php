@@ -6,17 +6,17 @@ class GolferController extends Controller
 
     public function __construct()
     {
-
+        $this->golferModel = $this->model('Golfer');
     }
 
     /**
      * Display a listing Golfers
      *
      */
-
     public function index()
     {
-        $this->view('pages/golfer/index', ['title' => 'Golfer']);
+        $data = ['golfers' => $this->golferModel->fetchAll()];
+        $this->view('pages/golfer/index', $data);
     }
 
 

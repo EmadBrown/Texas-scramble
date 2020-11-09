@@ -8,7 +8,7 @@ CREATE TABLE `golfers` (
   KEY `pk` (`golfer_id`)
 );
 
-CREATE TABLE ` tournaments` (
+CREATE TABLE `tournaments` (
   `tournament_id` integer unique AUTO_INCREMENT,
   `flight_id` integer not null,
   `create_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,

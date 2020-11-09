@@ -28,4 +28,11 @@ class Flight
         }
     }
 
+    // Fetch all Flights records
+    public function fetchAll()
+    {
+        $this->db->query('SELECT * FROM flights');
+        $flights = $this->db->resultSet();
+        return $flights;
+    }
 }

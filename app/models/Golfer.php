@@ -1,7 +1,7 @@
 <?php
 
 
-class Golfer extends GolferServices
+class Golfer extends Controller
 {
     private $db;
     private $golfer;
@@ -9,7 +9,6 @@ class Golfer extends GolferServices
     public function __construct()
     {
         $this->db = new Database;
-        $this->golfer = new GolferServices();
     }
 
     // Insert Golfer fields from
@@ -35,7 +34,7 @@ class Golfer extends GolferServices
         }
     }
 
-    // Insert Golfer fields from
+    // Fetch all Golfers records
     public function fetchAll()
     {
         $this->db->query('SELECT * FROM golfers');

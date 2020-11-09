@@ -5,17 +5,17 @@ class FlightController extends  Controller
 {
 
     public function __construct(){
-
+        $this->flightModel = $this->model('Flight');
     }
 
     /**
      * Display a listing Flights
      *
      */
-
     public function index()
     {
-        $this->view('pages/flight/index', ['title' => 'Flight']);
+        $data = ['flights' => $this->flightModel->fetchAll()];
+        $this->view('pages/flight/index',  $data );
     }
 
 

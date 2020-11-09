@@ -6,7 +6,7 @@ class TournamentController extends Controller
 
     public function __construct()
     {
-
+        $this->tournamentModel = $this->model('Tournament');
     }
 
 
@@ -14,10 +14,10 @@ class TournamentController extends Controller
      * Display a listing Tournaments
      *
      */
-
     public function index()
     {
-        $this->view('pages/tournament/index', ['title' => 'Tournament']);
+        $data = ['tournaments' => $this->tournamentModel->fetchAll()];
+        $this->view('pages/tournament/index', $data );
     }
 
 

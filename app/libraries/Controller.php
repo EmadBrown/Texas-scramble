@@ -17,6 +17,16 @@ class Controller
         return new $model();
     }
 
+    // Load service
+    public function service($service)
+    {
+        // Require service file
+        require_once '../app/services/' . $service . '.php';
+
+        // Instatiate service
+        return new $service();
+    }
+
     // Load view
     public function view($view, $data = [])
     {

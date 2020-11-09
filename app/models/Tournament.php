@@ -26,7 +26,7 @@ class Tournament
         }
     }
 
-    // Insert Tournament fields from
+    // Fetch all Tournament records
     public function fetchAll()
     {
         $this->db->query('SELECT * FROM tournaments');
