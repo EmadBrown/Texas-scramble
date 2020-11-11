@@ -23,7 +23,6 @@
                             <td>$gender</td>
                             <td>$golfer->handicap</td>
                         </tr>";
-
                 }
                 ?>
                 </tbody>

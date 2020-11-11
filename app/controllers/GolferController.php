@@ -3,6 +3,7 @@
 
 class GolferController extends Controller
 {
+    private $golfer;
 
     public function __construct()
     {
@@ -37,7 +38,21 @@ class GolferController extends Controller
      */
     public function store()
     {
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            // Sanitize POST data
+            $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 
+            $data = [
+                'name' => $this->clean($_POST['name']),
+                'handicap' => $this->clean($_POST['handicap']),
+                'gender' => $this->clean($_POST['gender']),
+            ];
+
+
+            // Check validation rules errors
+
+
+        }
     }
 
     /**
